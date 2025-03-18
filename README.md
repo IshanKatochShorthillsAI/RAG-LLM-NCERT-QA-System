@@ -46,7 +46,7 @@ Evaluated rigorously using **1100+ test cases**, yielding:
 
 | Metric                          | Average Score |
 |---------------------------------|---------------|
-| Context Precision               | 0.065         |
+| Context Precision               | 0.214         |
 | Context Recall                  | 0.468         |
 | Faithfulness (Cosine Similarity)| 0.650         |
 | Answer Relevancy (BERTScore)    | 0.730         |
