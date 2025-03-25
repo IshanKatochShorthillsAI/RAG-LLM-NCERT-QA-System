@@ -21,7 +21,7 @@ This repository contains a complete implementation of a **Retrieval-Augmented Ge
 - **Semantic Embeddings:** Generated via Google's Gemini API for efficient context retrieval.
 - **RAG Pipeline:** Semantic retrieval with Weaviate combined with Gemini LLM for accurate answers.
 - **Streamlit Web UI:** User-friendly interface for interactive Q&A.
-- **Comprehensive Evaluation:** Robust evaluation using BERTScore, cosine similarity, precision, and recall.
+- **Comprehensive Evaluation:** Robust RAGAS evaluation, using answer_relevancy and faithfulness.
 
 ---
 
@@ -36,20 +36,19 @@ The pipeline consists of:
 - **Semantic Retrieval & Generation:** Contextual retrieval from Weaviate, responses generated using Gemini LLM.
 - **Interactive Frontend:** Users interact through Streamlit apps.
   
-![mermaid-diagram-2025-03-18-074022](https://github.com/user-attachments/assets/7cf15c56-e134-409b-954d-7b87defcc29a)
+![mermaid-diagram-2025-03-25-090901](https://github.com/user-attachments/assets/fbb4e8b7-736a-4607-9ec2-c5f8a1bcabbf)
 
 ---
 
 ## **Evaluation Framework**
 
-Evaluated rigorously using **1100+ test cases**, yielding:
+Evaluated rigorously using **200+ test cases**, yielding:
 
-| Metric                          | Average Score |
-|---------------------------------|---------------|
-| Context Precision               | 0.214         |
-| Context Recall                  | 0.468         |
-| Faithfulness (Cosine Similarity)| 0.650         |
-| Answer Relevancy (BERTScore)    | 0.730         |
+| Metric              | Average Score |
+|---------------------|---------------|
+| Faithfulness        | 0.959         |
+| Answer Relevancy    | 0.901         |
+| Combined Aggregate  | 0.930         |
 
 ---
 
@@ -57,10 +56,10 @@ Evaluated rigorously using **1100+ test cases**, yielding:
 
 - **Web Automation:** Selenium  
 - **PDF Parsing:** PyPDF2  
-- **Vector Storage:** Weaviate  
+- **Vector Storage:** Weaviate Cloud
 - **Generative AI:** Gemini API  
 - **Frontend UI:** Streamlit  
-- **Evaluation Metrics:** NLTK, BERTScore, SentenceTransformers, scikit-learn  
+- **Evaluation Metrics:** NLTK, RAGAS, Gemini API
 
 *(Full details in `requirements.txt`)*
 
