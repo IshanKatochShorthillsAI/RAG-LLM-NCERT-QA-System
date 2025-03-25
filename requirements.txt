@@ -32,3 +32,6 @@ requests==2.31.0
 # Additional dependencies for ML backend support
 torch==2.2.1
 transformers==4.39.2
+
+# RAGAS
+ragas
